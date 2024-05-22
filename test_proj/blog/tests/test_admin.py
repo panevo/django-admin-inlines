@@ -94,7 +94,6 @@ def test_actions_rendered(admin_client, article, action):
         action,
         article.pk,
     )
-    print(changeview.forms)
     assert input_name in dict(changeview.forms['author_form'].fields)
 
 

@@ -87,7 +87,6 @@ def test_actions_rendered(admin_client, article, action):
     input_name = '_action__articleadmin__admin__{}__blog__article__{}'.format(
         action, article.pk
     )
-    print(changelist.forms)
     assert input_name in dict(changelist.forms['changelist-form'].fields)
 
 

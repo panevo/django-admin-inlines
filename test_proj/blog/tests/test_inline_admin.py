@@ -244,6 +244,5 @@ def test_handle_multiple_inlines(admin_client, mocker, article):
             article.pk,
         )
     )
-    print(changeview.forms)
     changeview.forms['authorproxy_form'].submit(name=input_name).follow()
     assert ArticleNoopInline.noop_action.call_count == 1
