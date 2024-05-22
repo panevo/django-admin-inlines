@@ -1,4 +1,4 @@
-# django4-inline-actions
+# django-inlineactions
 
 ![PyPI](https://img.shields.io/pypi/v/django4-inline-actions?style=flat-square)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django4-inline-actions?style=flat-square)
