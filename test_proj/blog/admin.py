@@ -67,7 +67,6 @@ class ChangeTitleActionsMixin(object):
         return actions
 
     def change_title(self, request, obj, parent_obj=None):
-
         # explictly check whether the submit button has been pressed
         if '_save' in request.POST:
             form = forms.ChangeTitleForm(request.POST, instance=obj)
