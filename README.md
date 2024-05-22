@@ -1,4 +1,4 @@
-# django-inlineactions
+# django-admin-inlines
 
 ![PyPI](https://img.shields.io/pypi/v/django4-inline-actions?style=flat-square)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django4-inline-actions?style=flat-square)
@@ -6,7 +6,7 @@
 <!-- ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/HiroshiFuu/django4-inline-actions/Test%20&%20Lint/master?style=flat-square) -->
 <!-- ![Coveralls github branch](https://img.shields.io/coveralls/github/HiroshiFuu/django4-inline-actions/master?style=flat-square) -->
 
-django-inlineactions adds actions to each row of the ModelAdmin or InlineModelAdmin.
+django-admin-inlines adds actions to each row of the ModelAdmin or InlineModelAdmin.
 
 ## Requirements
 
@@ -15,15 +15,15 @@ django-inlineactions adds actions to each row of the ModelAdmin or InlineModelAd
 
 ## Screenshot
 
-![Changelist example](https://raw.githubusercontent.com/karlokr-p/django-inlineactions/master/example_changelist.png)
-![Inline example](https://raw.githubusercontent.com/karlokr-p/django-inlineactions/master/example_inline.png)
+![Changelist example](https://raw.githubusercontent.com/karlokr-p/django-admin-inlines/master/example_changelist.png)
+![Inline example](https://raw.githubusercontent.com/karlokr-p/django-admin-inlines/master/example_inline.png)
 
 ## Installation
 
-1. Install django-inlineactions
+1. Install django-admin-inlines
 
    ```sh
-   pip install django-inlineactions
+   pip install django-admin-inlines
    ```
 
 2. Add `inline_actions` to your `INSTALLED_APPS`.
