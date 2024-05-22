@@ -20,10 +20,10 @@ django-inlineactions adds actions to each row of the ModelAdmin or InlineModelAd
 
 ## Installation
 
-1. Install django4-inline-actions
+1. Install django-inlineactions
 
    ```sh
-   pip install django4-inline-actions
+   pip install django-inlineactions
    ```
 
 2. Add `inline_actions` to your `INSTALLED_APPS`.
