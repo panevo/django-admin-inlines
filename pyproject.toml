@@ -1,18 +1,19 @@
 [tool.poetry]
-name = "django4-inline-actions"
-version = "1.5"
-description = "django4-inline-actions adds actions to each row of the ModelAdmin or InlineModelAdmin."
+name = "django-inlineactions"
+version = "1.0"
+description = "django-inlineactions adds actions to each row of the ModelAdmin or InlineModelAdmin."
 authors = [
     "Alexander Frenzel <alex@relatedworks.com>",
     "FENG Hao <hiroshifuu@outlook.com>",
+    "Karlo Krakan <karlo.krakan@panevo.com>",
 ]
 
 license = "BSD-3-Clause"
 readme = "README.md"
 
-documentation = "https://github.com/HiroshiFuu/django4-inline-actions/blob/master/README.md"
-homepage = "https://github.com/HiroshiFuu/django4-inline-actions"
-repository = "https://github.com/HiroshiFuu/django4-inline-actions"
+documentation = "https://github.com/karlokr-p/django-inlineactions/blob/master/README.md"
+homepage = "https://github.com/karlokr-p/django-inlineactions"
+repository = "https://github.com/karlokr-p/django-inlineactions"
 
 classifiers = [
   "Development Status :: 4 - Beta",
