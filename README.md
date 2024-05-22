@@ -6,11 +6,12 @@
 <!-- ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/HiroshiFuu/django4-inline-actions/Test%20&%20Lint/master?style=flat-square) -->
 <!-- ![Coveralls github branch](https://img.shields.io/coveralls/github/HiroshiFuu/django4-inline-actions/master?style=flat-square) -->
 
-django4-inline-actions adds actions to each row of the ModelAdmin or InlineModelAdmin. Add support for Django 4.
+django-inlineactions adds actions to each row of the ModelAdmin or InlineModelAdmin.
 
 ## Requirements
 
 * Python 3.8 or newer
+* Django 3.2+
 
 ## Screenshot
 
