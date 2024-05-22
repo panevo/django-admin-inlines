@@ -23,9 +23,9 @@ if sys.version_info < (3, 8):
     REQUIRES.append('python >= 3.8')
 
 
-setup(name='django4-inline-actions',
-      version=1.7,
-      description='django4-inline-actions adds actions to each row of the ModelAdmin or InlineModelAdmin',
+setup(name='django-inlineactions',
+      version=1.0,
+      description='django-inlineactions adds actions to each row of the ModelAdmin or InlineModelAdmin',
       long_description_content_type='text/markdown',
       long_description=long_description,
       author='Karlo Krakan',
