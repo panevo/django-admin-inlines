@@ -11,12 +11,12 @@ django-inlineactions adds actions to each row of the ModelAdmin or InlineModelAd
 ## Requirements
 
 * Python 3.8 or newer
-* Django 3.2+
+* Django >3.2, <5.0
 
 ## Screenshot
 
-![Changelist example](https://raw.githubusercontent.com/HiroshiFuu/django4-inline-actions/master/example_changelist.png)
-![Inline example](https://raw.githubusercontent.com/HiroshiFuu/django4-inline-actions/master/example_inline.png)
+![Changelist example](https://raw.githubusercontent.com/karlokr-p/django-inlineactions/master/example_changelist.png)
+![Inline example](https://raw.githubusercontent.com/karlokr-p/django-inlineactions/master/example_inline.png)
 
 ## Installation
 
