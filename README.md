@@ -6,7 +6,7 @@
 <!-- ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/HiroshiFuu/django4-inline-actions/Test%20&%20Lint/master?style=flat-square) -->
 <!-- ![Coveralls github branch](https://img.shields.io/coveralls/github/HiroshiFuu/django4-inline-actions/master?style=flat-square) -->
 
-django-admin-inlines adds actions to each row of the ModelAdmin or InlineModelAdmin. (A fork of django-inline-actions)
+django-admin-inlines adds actions to each row of the ModelAdmin or InlineModelAdmin. (A fork of [django-inline-actions](https://github.com/HiroshiFuu/django4-inline-actions))
 
 ## Requirements
 
