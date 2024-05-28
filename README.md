@@ -1,12 +1,14 @@
 # django-admin-inlines
 
-![PyPI](https://img.shields.io/pypi/v/django4-inline-actions?style=flat-square)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django4-inline-actions?style=flat-square)
-![PyPI - License](https://img.shields.io/pypi/l/django4-inline-actions?style=flat-square)
-<!-- ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/HiroshiFuu/django4-inline-actions/Test%20&%20Lint/master?style=flat-square) -->
-<!-- ![Coveralls github branch](https://img.shields.io/coveralls/github/HiroshiFuu/django4-inline-actions/master?style=flat-square) -->
+![PyPI](https://img.shields.io/pypi/v/django-admin-inlines?style=flat-square)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-admin-inlines?style=flat-square)
+![PyPI - License](https://img.shields.io/pypi/l/django-admin-inlines?style=flat-square)
+<!-- ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/Panevo/django-admin-inlines/Test%20&%20Lint/master?style=flat-square) -->
+<!-- ![Coveralls github branch](https://img.shields.io/coveralls/github/Panevo/django-admin-inlines/master?style=flat-square) -->
 
 django-admin-inlines adds actions to each row of the ModelAdmin or InlineModelAdmin. (A fork of [django-inline-actions](https://github.com/escaped/django-inline-actions))
+
+This is a fork of [django-inline-actions](https://github.com/escaped/django-inline-actions). As this package has gone unmaintained for several years, we have decided to maintain the package indefinitely in order to maintain compatability with future Django versions, starting with Django 4.x.
 
 ## Requirements
 
@@ -15,8 +17,8 @@ django-admin-inlines adds actions to each row of the ModelAdmin or InlineModelAd
 
 ## Screenshot
 
-![Changelist example](https://raw.githubusercontent.com/karlokr-p/django-admin-inlines/master/example_changelist.png)
-![Inline example](https://raw.githubusercontent.com/karlokr-p/django-admin-inlines/master/example_inline.png)
+![Changelist example](https://raw.githubusercontent.com/Panevo/django-admin-inlines/master/example_changelist.png)
+![Inline example](https://raw.githubusercontent.com/Panevo/django-admin-inlines/master/example_inline.png)
 
 ## Installation
 
@@ -233,7 +235,7 @@ This will be simplified in the next major release!
 
 
 In order to have an intermediate form, you must add some information about the triggered action.
-`django4-inline-actions` provides a handy templatetag `render_inline_action_fields`,
+`django-admin-inlines` provides a handy templatetag `render_inline_action_fields`,
 which adds these information as hidden fields to a form.
 
 ```html
@@ -286,12 +288,12 @@ The corresponding action could look like
 
 ## Example Application
 
-You can see `django4-inline-actions` in action using the bundled test application `test_proj`.
+You can see `django-admin-inlines` in action using the bundled test application `test_proj`.
 Use [`poetry`](https://poetry.eustace.io/) to run it.
 
 ```bash
-git clone https://github.com/HiroshiFuu/django4-inline-actions.git
-cd django4-inline-actions/
+git clone https://github.com/Panevo/django-admin-inlines.git
+cd django4-admin-inlines/
 poetry install
 poetry run pip install Django
 cd test_proj
@@ -341,7 +343,7 @@ def test_action_XXX(admin_site):
 Alternatively, you can test your actions on the real Django admin page.
 You will have to log in, navigate to the corresponding admin and trigger a click on the action.
 To simplify this process you can use [django-webtest](https://github.com/django-webtest/django-webtest).
-Example can be found [here](https://github.com/HiroshiFuu/django4-inline-actions/blob/master/test_proj/blog/tests/test_inline_admin.py#L146).
+Example can be found [here](https://github.com/Panevo/django-admin-inlines/blob/master/test_proj/blog/tests/test_inline_admin.py#L146).
 
 ## Development
 
