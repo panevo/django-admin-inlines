@@ -2,7 +2,6 @@
 # -*- coding:utf-8 -*-
 # This Python file uses the following encoding: utf-8
 import os
-import sys
 
 from setuptools import find_packages, setup
 
@@ -10,18 +9,10 @@ from setuptools import find_packages, setup
 readme_file = os.path.join(os.path.dirname(__file__), 'README.md')
 long_description = open(readme_file).read()
 
-# Build a list with requirements of the app
-REQUIRES = []
-try:
-    pass
-except ImportError:
-    # Because of the strange update behavior of "pip --upgrade package_name"
-    # set requierment only if django not avallible.
-    REQUIRES.append('django')
-
-if sys.version_info < (3, 8):
-    REQUIRES.append('python >= 3.8')
-
+# Define requirements for the app
+REQUIRES = [
+    'django>=3.2,<5.3',
+]
 
 setup(
     name='django-admin-inlines',
