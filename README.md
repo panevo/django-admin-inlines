@@ -3,17 +3,15 @@
 ![PyPI](https://img.shields.io/pypi/v/django-admin-inlines?style=flat-square)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-admin-inlines?style=flat-square)
 ![PyPI - License](https://img.shields.io/pypi/l/django-admin-inlines?style=flat-square)
-<!-- ![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/Panevo/django-admin-inlines/Test%20&%20Lint/master?style=flat-square) -->
-<!-- ![Coveralls github branch](https://img.shields.io/coveralls/github/Panevo/django-admin-inlines/master?style=flat-square) -->
 
 django-admin-inlines adds actions to each row of the ModelAdmin or InlineModelAdmin. (A fork of [django-inline-actions](https://github.com/escaped/django-inline-actions))
 
-This is a fork of [django-inline-actions](https://github.com/escaped/django-inline-actions). As this package has gone unmaintained for several years, we have decided to maintain the package indefinitely in order to maintain compatability with future Django versions, starting with Django 4.x.
+This is a fork of [django-inline-actions](https://github.com/escaped/django-inline-actions). As this package has gone unmaintained for several years, we have decided to maintain the package indefinitely in order to maintain compatibility with future Django versions, starting with Django 4.x.
 
 ## Requirements
 
-* Python 3.8 or newer
-* Django >3.2, <5.0
+* Python 3.9 or newer
+* Django >3.2, <5.3
 
 ## Screenshot
 
