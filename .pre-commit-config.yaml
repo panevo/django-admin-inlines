@@ -32,10 +32,11 @@ repos:
         entry: poetry run mypy
         types: [python]
 
-  - repo: local
-    hooks:
-      - id: flake8
-        name: flake8
-        language: system
-        entry: poetry run flake8
-        types: [python]
+  # Temporarily disabled until flake8 is compatible with Python 3.13
+  # - repo: local
+  #   hooks:
+  #     - id: flake8
+  #       name: flake8
+  #       language: system
+  #       entry: poetry run flake8
+  #       types: [python]
