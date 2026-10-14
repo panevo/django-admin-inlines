@@ -287,17 +287,15 @@ The corresponding action could look like
 ## Example Application
 
 You can see `django-admin-inlines` in action using the bundled test application `test_proj`.
-Use [`poetry`](https://poetry.eustace.io/) to run it.
 
 ```bash
-git clone https://github.com/Panevo/django-admin-inlines.git
-cd django4-admin-inlines/
-poetry install
-poetry run pip install Django
+git clone https://github.com/panevo/django-admin-inlines.git
+cd django-admin-inlines/
+pip install -e . --group dev
 cd test_proj
-poetry run ./manage.py migrate
-poetry run ./manage.py createsuperuser
-poetry run ./manage.py runserver
+./manage.py migrate
+./manage.py createsuperuser
+./manage.py runserver
 ```
 
 Open [`http://localhost:8000/admin/`](http://localhost:8000/admin/) in your browser and create an author and some articles.
@@ -345,33 +343,33 @@ Example can be found [here](https://github.com/Panevo/django-admin-inlines/blob/
 
 ## Development
 
-This project uses [poetry](https://poetry.eustace.io/) for packaging and
-managing all dependencies and [pre-commit](https://pre-commit.com/) to run
-[flake8](http://flake8.pycqa.org/), [isort](https://pycqa.github.io/isort/),
-[mypy](http://mypy-lang.org/) and [black](https://github.com/python/black).
+This project uses [pre-commit](https://pre-commit.com/) to run
+[black](https://github.com/psf/black), [isort](https://pycqa.github.io/isort/),
+[autoflake](https://github.com/PyCQA/autoflake) and [mypy](http://mypy-lang.org/).
+Linting in CI also runs [ruff](https://docs.astral.sh/ruff/).
 
-Additionally, [pdbpp](https://github.com/pdbpp/pdbpp) and [better-exceptions](https://github.com/qix-/better-exceptions) are installed to provide a better debugging experience.
-To enable `better-exceptions` you have to run `export BETTER_EXCEPTIONS=1` in your current session/terminal.
-
-Clone this repository and run
+Clone this repository and, in a virtual environment, run
 
 ```bash
-poetry install
-poetry run pre-commit install
+pip install -e . --group dev
+pre-commit install
 ```
 
-to create a virtual enviroment containing all dependencies.
-Afterwards, You can run the test suite using
+to install the package together with all development dependencies (`--group` requires pip 25.1 or newer).
+Afterwards, you can run the test suite using
 
 ```bash
-poetry run pytest
+pytest
 ```
+
+or run it against all supported Python and Django versions using `tox`.
 
 This repository follows the [Conventional Commits](https://www.conventionalcommits.org/) style.
 
 ## Deployment
 
-Use `setup.py` to build and upload to PyPI using `twine`.
+Releases are published to PyPI by the `publish.yml` workflow when a release is created on GitHub.
+Before creating a release, set the new version in `pyproject.toml` and add a dated entry for it at the top of `CHANGELOG.md`.
 
 ### Cookiecutter template
 
