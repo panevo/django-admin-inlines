@@ -1,6 +1,6 @@
 # django-admin-inlines
 
-![PyPI](https://img.shields.io/pypi/v/django-admin-inlines?style=flat-square)
+![PyPI](https://img.shields.io/pypi/v/django-admin-inlines?style=flat-square&cacheSeconds=3600)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-admin-inlines?style=flat-square)
 ![PyPI - License](https://img.shields.io/pypi/l/django-admin-inlines?style=flat-square)
 
