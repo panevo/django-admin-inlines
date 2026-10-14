@@ -10,8 +10,8 @@ This is a fork of [django-inline-actions](https://github.com/escaped/django-inli
 
 ## Requirements
 
-* Python 3.9 or newer
-* Django >3.2, <5.3
+* Python 3.10 or newer
+* Django 4.2 or newer
 
 ## Screenshot
 
