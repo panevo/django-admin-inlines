@@ -49,12 +49,26 @@ Changelog = "https://github.com/panevo/django-admin-inlines/blob/master/CHANGELO
 Issues = "https://github.com/panevo/django-admin-inlines/issues"
 
 [dependency-groups]
-# Tools used by the pre-commit hooks and to run the tests
-dev = [
-    "autoflake>=1.4,<2",
+test = [
+    "coverage>=7.10",
+    "django-webtest>=1.9",
+    "lxml>=5.0",
+    "pytest>=8",
+    "pytest-django>=4.11",
+    "pytest-mock>=3.3.1",
+    "webob>=1.8.9",
+]
+lint = [
     "black>=24.3,<25",
     "isort>=5.5.2,<6",
     "mypy",
+    "ruff",
+]
+# Everything needed for local development, including the pre-commit hooks
+dev = [
+    { include-group = "test" },
+    { include-group = "lint" },
+    "autoflake>=1.4,<2",
     "pre-commit",
     "tox",
 ]
@@ -84,3 +98,43 @@ exclude = '''
   )/
 )
 '''
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "test_proj.settings"
+django_find_project = false
+pythonpath = ["."]
+testpaths = ["test_proj"]
+addopts = "--durations=10"
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source_pkgs = ["inline_actions"]
+
+[tool.coverage.paths]
+source = [
+    "src/inline_actions",
+    "*/site-packages/inline_actions",
+]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+exclude_lines = [
+    "pragma: no cover",
+    "def __unicode__",
+    "def __repr__",
+    "def __str__",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+# Line length is handled by black
+ignore = ["E501"]
