@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-admin-inlines"
-version = "1.1.0"
+version = "1.2.0"
 description = "django-admin-inlines adds actions to each row of the ModelAdmin or InlineModelAdmin. (A fork of django-inline-actions)"
 authors = [
     "Karlo Krakan <karlo.krakan@panevo.com>",
@@ -17,20 +17,19 @@ repository = "https://github.com/Panevo/django-admin-inlines"
 
 classifiers=[
     'Development Status :: 5 - Production/Stable',
-    'Framework :: Django :: 3.2',
-    'Framework :: Django :: 4.0',
-    'Framework :: Django :: 4.1',
     'Framework :: Django :: 4.2',
     'Framework :: Django :: 5.0',
     'Framework :: Django :: 5.1',
     'Framework :: Django :: 5.2',
+    'Framework :: Django :: 6.0',
+    'Framework :: Django :: 6.1',
     'License :: OSI Approved :: BSD License',
     'Operating System :: OS Independent',
-    'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
     'Programming Language :: Python :: 3.12',
     'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3.14',
     'Environment :: Console',
     'Natural Language :: English',
     'Intended Audience :: Developers',
@@ -42,8 +41,10 @@ packages = [
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.9, <3.14"
-django = ">=3.2, <5.3"
+# No upper bounds: when a new release is excluded, package installers fall back to
+# older versions of this package instead of reporting the incompatibility
+python = ">=3.10"
+django = ">=4.2"
 
 [tool.poetry.group.dev.dependencies]
 autoflake = "^1.4"
@@ -72,7 +73,7 @@ webob = "^1.8.9"
 [tool.black]
 line-length = 88
 skip-string-normalization = true
-target_version = ['py39', 'py310', 'py311', 'py312']
+target_version = ['py310', 'py311', 'py312', 'py313', 'py314']
 include = '\.pyi?$'
 exclude = '''
 (
