@@ -5,7 +5,7 @@ repos:
       - id: black
         name: black
         language: system
-        entry: poetry run black
+        entry: black
         types: [python]
   
   - repo: local
@@ -13,7 +13,7 @@ repos:
       - id: autoflake
         name: autoflake
         language: system
-        entry: poetry run autoflake --expand-star-imports --remove-all-unused-imports --remove-unused-variables --in-place --recursive test_proj/ inline_actions/
+        entry: autoflake --expand-star-imports --remove-all-unused-imports --remove-unused-variables --in-place --recursive test_proj/ inline_actions/
         types: [python]
 
   - repo: local
@@ -21,7 +21,7 @@ repos:
       - id: isort
         name: isort
         language: system
-        entry: poetry run isort
+        entry: isort
         types: [python]
 
   - repo: local
@@ -29,7 +29,7 @@ repos:
       - id: mypy
         name: mypy
         language: system
-        entry: poetry run mypy
+        entry: mypy
         types: [python]
 
   # Temporarily disabled until flake8 is compatible with Python 3.13
@@ -38,5 +38,5 @@ repos:
   #     - id: flake8
   #       name: flake8
   #       language: system
-  #       entry: poetry run flake8
+  #       entry: flake8
   #       types: [python]

@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 * Remove the upper bounds on the Django and Python versions
+* Move the package configuration from Poetry to `pyproject.toml` with setuptools
+* Publish releases to PyPI using trusted publishing
 
 ### Removed
 
