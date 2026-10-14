@@ -60,6 +60,7 @@ dev = [
 ]
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["inline_actions", "inline_actions.*"]
 
 [tool.black]
